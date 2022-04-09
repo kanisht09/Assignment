@@ -1,0 +1,96 @@
+.hero-section {
+  position: relative;
+  background-color: #373b7b;
+  height: 100vh;
+  color: #fff;
+  padding: 0 6rem 0 5rem;
+  display: flex;
+}
+.hero-section-left {
+  display: flex;
+  align-items: space-around;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+  width: 60%;
+  padding: 4rem 0;
+}
+.hero-section-right {
+  width: 40%;
+  background-color: #b4b8ff;
+  position: relative;
+}
+.dr-img {
+  position: absolute;
+  width: 100%;
+  left: -2rem;
+  bottom: 0;
+}
+.hero-text,
+.hero-text-em {
+  font-size: 3rem;
+  line-height: 5.4rem;
+  font-weight: 400;
+}
+.hero-text-em {
+  font-weight: 700;
+}
+.hero-btn-box {
+  display: flex;
+  gap: 1.5rem;
+}
+
+@media (max-width: 83em) {
+  .hero-text,
+  .hero-text-em {
+    line-height: 4rem;
+  }
+}
+@media (max-width: 79em) {
+  .hero-text,
+  .hero-text-em {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 72em) {
+  .hero-text,
+  .hero-text-em {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 68em) {
+  .hero-text,
+  .hero-text-em {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 65em) {
+  .hero-text,
+  .hero-text-em {
+    font-size: 2.1rem;
+  }
+}
+
+@media (max-width: 61em) {
+  .hero-text,
+  .hero-text-em {
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+  }
+}
+@media (max-width: 58em) {
+  .hero-text,
+  .hero-text-em {
+    font-size: 1.7rem;
+    line-height: 3.4rem;
+  }
+}
+@media (max-width: 51em) {
+  .hero-section {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

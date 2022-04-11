@@ -15,20 +15,24 @@ const Footer = () => {
 
       <div className='university-box'>
         <figure className='d-flex  br-sm'>
-          <img src={harvard} alt='Harvard University' />
+          <img src={harvard} className='img-univ' alt='Harvard University' />
         </figure>
         <figure className='d-flex br-sm'>
-          <img src={oxford} alt='University Of Oxford ' />
+          <img src={oxford} className='img-univ' alt='University Of Oxford ' />
         </figure>
         <figure className='d-flex img-container br-sm'>
-          <img src={stanford} alt='Stanford University' />
+          <img src={stanford} className='img-univ' alt='Stanford University' />
         </figure>
         <figure className='d-flex img-container br-sm'>
-          <img src={cornell} alt='Cornell University' />
+          <img src={cornell} className='img-univ' alt='Cornell University' />
         </figure>
         <figure className='d-flex img-container br-sm'>
-          <img src={iitdelhi} alt='IIT Delhi' />
-          <p>
+          <img
+            src={iitdelhi}
+            className='img-univ iit-delhi-img'
+            alt='IIT Delhi'
+          />
+          <p className='img-text'>
             <strong>IIT Delhi</strong>
           </p>
         </figure>

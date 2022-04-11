@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from './Navbar';
+import Form from './Form/Form';
 import './Hero.css';
 import dr from '../assets/dr.png';
 
 const Hero = () => {
+  const [open, setOpen] = useState(false);
+  const handleModal = () => {
+    setOpen((prevState) => !prevState);
+  };
   return (
     <section className='hero-section'>
       <Navbar />
@@ -13,10 +18,13 @@ const Hero = () => {
           for the future
         </p>
         <div className='hero-btn-box'>
-          <a className='btn btn--full' href='#!'>
+          <button
+            className='btn btn--full cmt-btn btn-prop'
+            onClick={handleModal}
+          >
             Join the community
-          </a>
-          <a className='btn btn--outline' href='#!'>
+          </button>
+          <a className='btn btn--outline explr-btn' href='#!'>
             Explore
           </a>
         </div>
@@ -24,6 +32,7 @@ const Hero = () => {
       <div className='hero-section-right'>
         <img src={dr} className='dr-img' alt='Doctor' />
       </div>
+      <Form open={open} handleModal={handleModal} />
     </section>
   );
 };

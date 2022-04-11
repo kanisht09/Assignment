@@ -72,7 +72,14 @@
   color: #000;
   background-color: #fdf2e9;
 }
-
+.btn-prop {
+  color: #fff;
+  background-color: #ff6868;
+  /* width: 100px; */
+}
+.btn-prop:hover {
+  background-color: #e65e5e;
+}
 .grid {
   display: grid;
 }
@@ -120,7 +127,37 @@
   .btn,
   .btn:link,
   .btn:visited {
-    width: 43%;
-    font-size: 0.5rem;
+    width: 44%;
+    font-size: 0.7rem;
+    padding: 0.8rem 1.6rem;
+  }
+}
+
+@media (max-width: 51em) {
+  .heading-secondary {
+    font-weight: 450;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media (max-width: 37em) {
+  .btn,
+  .btn:link,
+  .btn:visited {
+    width: 70%;
+    font-size: 0.7rem;
+    padding: 0.8rem 1.6rem;
+  }
+}
+
+@media (max-width: 31em) {
+  .btn,
+  .btn:link,
+  .btn:visited {
+    width: 80%;
+    font-size: 0.7rem;
+    padding: 0.8rem 1.6rem;
   }
 }

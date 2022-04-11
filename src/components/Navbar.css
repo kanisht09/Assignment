@@ -105,6 +105,8 @@
     justify-content: center;
   }
   .navbar {
+    padding: 1rem 0;
     position: static;
+    justify-content: center;
   }
 }

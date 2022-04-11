@@ -17,9 +17,18 @@ footer {
 }
 .university-box {
   display: grid;
+  margin: 0 auto;
+
   grid-template-columns: repeat(5, 1fr);
 }
-
+@media (max-width: 79em) {
+  .university-box {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .img-container:last-child {
+    padding: 3rem 0;
+  }
+}
 @media (max-width: 65em) {
   .university-box {
     grid-template-columns: repeat(3, 1fr);
@@ -29,13 +38,49 @@ footer {
 @media (max-width: 51em) {
   .university-box {
     width: 80%;
-    margin: 0 auto;
     grid-template-columns: repeat(1, 1fr);
   }
   .img-container {
-    padding: 0.6rem 0;
+    padding: 0.6rem 0.5rem;
   }
   .img-container:last-child {
     padding: 2rem 0;
+  }
+  .img-text {
+    font-size: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .d-flex {
+    align-items: center;
+  }
+}
+@media (max-width: 31.3em) {
+  .img-univ {
+    width: 100%;
+  }
+  .iit-delhi-img {
+    width: 50%;
+  }
+  .d-flex {
+    align-items: center;
+  }
+  footer {
+    padding: 2.8rem 6rem;
+  }
+}
+@media (max-width: 22.6em) {
+  footer {
+    padding: 2.8rem 4rem;
+  }
+}
+
+@media (max-width: 16.3em) {
+  footer {
+    padding: 2.8rem 3.6rem;
+  }
+  .footer-heading {
+    font-size: 0.9rem;
   }
 }
